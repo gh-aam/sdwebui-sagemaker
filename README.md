@@ -2,10 +2,19 @@
 
 * Setup
 ```
-cd /tmp && wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh && sh setup.sh
+cd /tmp
+```
+```
+wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh
+```
+```
+sh setup.sh
 ```
 
 * Launch
 ```
-cd ~/stable-diffusion/stable-diffusion-webui && sh webui.sh
+cd ~/stable-diffusion/stable-diffusion-webui
+```
+```
+sh webui.sh
 ```
