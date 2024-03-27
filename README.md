@@ -10,10 +10,6 @@ wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh
 ```
 sh setup.sh
 ```
-Or,
-```
-cd /tmp && wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh && sh setup.sh
-```
 
 ### Launch
 ```
@@ -21,8 +17,4 @@ cd ~/stable-diffusion/stable-diffusion-webui
 ```
 ```
 sh webui.sh
-```
-Or,
-```
-cd ~/stable-diffusion/stable-diffusion-webui && sh webui.sh
 ```
