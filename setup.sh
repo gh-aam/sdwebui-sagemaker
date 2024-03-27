@@ -11,5 +11,6 @@ mkdir stable-diffusion
 cd ~/stable-diffusion
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/webui.sh
+wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/storage.sh
 
 conda deactivate
