@@ -8,17 +8,11 @@ cd /tmp && wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh 
 
 * **Launch**
 ```
-cd ~/stable-diffusion
-```
-```
-sh webui.sh
+cd ~/stable-diffusion && sh webui.sh
 ```
 
 ## Extra
 * **Storage**
 ```
-cd ~/stable-diffusion
-```
-```
-sh storage.sh
+cd ~/stable-diffusion && sh storage.sh
 ```
