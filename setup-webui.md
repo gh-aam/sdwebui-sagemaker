@@ -1,9 +1,9 @@
 ```
-cd ~ && conda create -y -n automatic python=3.10 glib=2.51.0
+conda create -y -n automatic python=3.10 glib=2.51.0
 ```
 
 ```
-cd ~ && conda activate automatic
+conda activate automatic
 ```
 
 ```
@@ -15,5 +15,5 @@ cd ~/stable-diffusion && git clone https://github.com/AUTOMATIC1111/stable-diffu
 ```
 
 ```
-cd ~ && conda deactivate
+conda deactivate
 ```
