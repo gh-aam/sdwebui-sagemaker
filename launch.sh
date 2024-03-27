@@ -10,7 +10,7 @@ python launch.py --ngrok ${NGROK_AUTHTOKEN} --listen --xformers --no-half-vae --
 
 cd ~
 rm -rf ~/.cache/*
-rm -rf ~/stable-diffusion-webui/output/*
+rm -rf ~/stable-diffusion/stable-diffusion-webui/output/*
 df -h | grep -E 'Avail|home'
 du -h --max-depth=1 ~
 
