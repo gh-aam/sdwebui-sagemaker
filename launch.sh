@@ -5,7 +5,6 @@ conda activate sdwebui
 
 cd stable-diffusion-webui
 git pull
-
 cd ..
 
 if [[ "$1" == "--reset" ]]; then
