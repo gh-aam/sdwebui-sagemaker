@@ -3,7 +3,7 @@
 ## WebUI
 * **Setup**
 ```
-cd /tmp && wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh && sh setup.sh
+cd /tmp && wget https://github.com/gh-aam/sdwebui-smsl/raw/main/setup.sh && sh setup.sh
 ```
 
 * **Launch**
@@ -11,7 +11,7 @@ cd /tmp && wget https://github.com/gh-aam/sdwebui-sagemakersl/raw/main/setup.sh 
 cd ~/stable-diffusion
 ```
 ```
-sh webui.sh
+sh launch.sh
 ```
 
 ## Extra
