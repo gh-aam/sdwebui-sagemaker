@@ -3,22 +3,15 @@
 ## WebUI
 * **Setup**
 ```
-cd /tmp && wget https://github.com/gh-aam/sdwebui-smsl/raw/main/setup.sh && sh setup.sh
+sh setup.sh
 ```
-
 * **Launch**
-```
-cd ~/stable-diffusion
-```
 ```
 sh launch.sh
 ```
 
 ## Extra
 * **Storage**
-```
-cd ~/stable-diffusion
-```
 ```
 sh storage.sh
 ```
