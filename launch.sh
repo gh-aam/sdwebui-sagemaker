@@ -3,7 +3,7 @@
 cd stable-diffusion-webui
 
 eval "$(conda shell.bash hook)"
-conda activate sdwebui
+conda activate automatic
 
 git pull
 read -p "Enter Ngrok token: " NGROK_TOKEN
