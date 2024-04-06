@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d "~/.conda/envs/automatic" ]; then
+if [ ! -d "/home/studio-lab-user/.conda/envs/automatic" ]; then
     conda create -y -n automatic python=3.10 glib
 fi
 
