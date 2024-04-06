@@ -1,7 +1,7 @@
 #!/bin/bash
 
 eval "$(conda shell.bash hook)"
-conda activate automatic
+conda activate sdwebui
 
 cd stable-diffusion-webui
 git pull
