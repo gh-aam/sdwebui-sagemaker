@@ -1,16 +1,10 @@
 # [SD WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on [SMSL](https://studiolab.sagemaker.aws)
 
-## WebUI
-* **Setup**
+* **WebUI**
 ```
-sh setup.sh
-```
-* **Launch**
-```
-sh launch.sh
+sh webui.sh
 ```
 
-## Extra
 * **Storage**
 ```
 sh storage.sh
