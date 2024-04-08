@@ -16,7 +16,7 @@ if [ ! -f "$SCRIPT_DIR/ngrok_data.txt" ]; then
     read -p "Enter Ngrok token: " TOKEN
     echo $TOKEN > $SCRIPT_DIR/ngrok_data.txt
 else
-    read -p "Ngrok token found! Reset? (Y/N/E): " RESET_OPTION
+    read -p "Ngrok token found! Reset? (y/N/E): " RESET_OPTION
     case "$RESET_OPTION" in
         [yY]*)
             read -p "Enter Ngrok token: " TOKEN
