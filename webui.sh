@@ -8,10 +8,6 @@ if [ ! -d "stable-diffusion-webui" ]; then
     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 fi
 
-cd stable-diffusion-webui
-git pull
-
-cd ..
 if [ ! -f "ngrok_data.txt" ]; then
     read -p "Enter Ngrok token: " NGROK_TOKEN
     echo $NGROK_TOKEN > ngrok_data.txt
@@ -29,6 +25,7 @@ else
 fi
 
 cd stable-diffusion-webui
+git pull
 eval "$(conda shell.bash hook)"
 conda activate automatic
 python launch.py --ngrok $NGROK_TOKEN --api --listen --xformers --no-half-vae --enable-insecure-extension-access --gradio-queue --theme dark
