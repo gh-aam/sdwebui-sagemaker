@@ -7,9 +7,7 @@ fi
 if [ ! -d "stable-diffusion-webui" ]; then
     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 else
-    cd stable-diffusion-webui
-    git pull
-    cd ..
+    cd stable-diffusion-webui && git pull && cd ..
 fi
 
 if [ ! -f "ngrok_data.txt" ]; then
