@@ -13,22 +13,20 @@ git pull
 
 cd ..
 if [ ! -f "ngrok_data.txt" ]; then
-    read -p "Enter Ngrok token: " TOKEN
-    echo $TOKEN > ngrok_data.txt
+    read -p "Enter Ngrok token: " NGROK_TOKEN
+    echo $NGROK_TOKEN > ngrok_data.txt
 else
     read -p "Ngrok token found! Reset? (y/N/O): " RESET_OPTION
     case "$RESET_OPTION" in
         [yY]*)
-            read -p "Enter Ngrok token: " TOKEN
-            echo $TOKEN > ngrok_data.txt
-            ;;
-        [nN]*)
+            read -p "Enter Ngrok token: " NGROK_TOKEN
+            echo $NGROK_TOKEN > ngrok_data.txt
             ;;
         *)
+            NGROK_TOKEN=$(cat ngrok_data.txt)
             ;;
     esac
 fi
-NGROK_TOKEN=$(cat ngrok_data.txt)
 
 cd stable-diffusion-webui
 eval "$(conda shell.bash hook)"
