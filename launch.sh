@@ -1,10 +1,9 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(pwd)
 cd stable-diffusion-webui
-
 git pull
 
+cd ..
 if [ ! -f "$SCRIPT_DIR/ngrok_data.txt" ]; then
     read -p "Enter Ngrok token: " NGROK_TOKEN
     echo $NGROK_TOKEN > $SCRIPT_DIR/ngrok_data.txt
@@ -21,6 +20,7 @@ else
     esac
 fi
 
+cd stable-diffusion-webui
 eval "$(conda shell.bash hook)"
 conda activate automatic
 python launch.py --ngrok $NGROK_TOKEN --api --listen --xformers --no-half-vae --enable-insecure-extension-access --gradio-queue --theme dark
