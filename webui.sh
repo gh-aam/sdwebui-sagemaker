@@ -9,7 +9,9 @@ elif [ ! -d "stable-diffusion-webui" ]; then
     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 fi
 
-cd stable-diffusion-webui && git pull && cd ..
+cd stable-diffusion-webui
+git pull
+cd ..
 
 if [ ! -f "ngrok_data.txt" ]; then
     read -p "Enter Ngrok token: " NGROK_TOKEN
