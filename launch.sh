@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SCRIPT_DIR=$(pwd)
-
 cd stable-diffusion-webui
+
 git pull
 
 if [ ! -f "$SCRIPT_DIR/ngrok_data.txt" ]; then
