@@ -2,8 +2,8 @@
 
 cd stable-diffusion-webui
 git pull
-
 cd ..
+
 if [ ! -f "ngrok_data.txt" ]; then
     read -p "Enter Ngrok token: " NGROK_TOKEN
     echo $NGROK_TOKEN > ngrok_data.txt
