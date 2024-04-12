@@ -1,10 +1,10 @@
 #!/bin/bash
 
 if [ ! -d "/home/studio-lab-user/.conda/envs/automatic" ] && [ ! -d "stable-diffusion-webui" ]; then
-    conda create -y -n automatic python=3.10 glib
+    conda create -y -n automatic python=3.10 glib=2.51.0
     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 elif [ ! -d "/home/studio-lab-user/.conda/envs/automatic" ]; then
-    conda create -y -n automatic python=3.10 glib
+    conda create -y -n automatic python=3.10 glib=2.51.0
 elif [ ! -d "stable-diffusion-webui" ]; then
     git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 fi
@@ -32,4 +32,4 @@ fi
 cd stable-diffusion-webui
 eval "$(conda shell.bash hook)"
 conda activate automatic
-python launch.py --ngrok $NGROK_TOKEN --api --listen --xformers --no-half-vae --enable-insecure-extension-access --gradio-queue --theme dark
+python launch.py --ngrok $NGROK_TOKEN --api --listen --xformers --no-half-vae --enable-insecure-extension-access --gradio-queue
