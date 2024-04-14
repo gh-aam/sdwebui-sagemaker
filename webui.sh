@@ -32,4 +32,4 @@ fi
 cd stable-diffusion-webui
 eval "$(conda shell.bash hook)"
 conda activate automatic
-python launch.py --ngrok $NGROK_TOKEN --api --listen --xformers --no-half-vae --enable-insecure-extension-access --gradio-queue
+python launch.py --ngrok $NGROK_TOKEN --api --listen --xformers --no-half-vae --enable-insecure-extension-access --gradio-queue --theme dark
